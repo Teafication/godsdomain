@@ -27,7 +27,7 @@ export function Hero() {
             >
               {" "}
               <span className="text-black dark:text-white">
-                Join Kingdom of
+                Join Kingdom
               </span>{" "}
               <span className="inline-flex items-baseline font-semibold">
                 <ClientOnly>
