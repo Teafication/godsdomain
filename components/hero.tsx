@@ -10,7 +10,10 @@ import ClientOnly from "@/app/provider";
 
 export function Hero() {
   return (
-    <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col overflow-hidden">
+    <div
+      id="discord"
+      className="relative mx-auto flex min-h-screen max-w-7xl flex-col overflow-hidden"
+    >
       {/* Rainbow Meteors */}
       <ClientOnly>
         <Meteors number={30} />
@@ -53,9 +56,15 @@ export function Hero() {
             >
               {" "}
               <ClientOnly>
-                <RainbowButton size="lg" className="dark:text-black">
-                  Visit our Discord
-                </RainbowButton>
+                <a
+                  href="https://discord.gg/hD6Ae3msa8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <RainbowButton size="lg" className="dark:text-black">
+                    Visit our Discord
+                  </RainbowButton>
+                </a>
               </ClientOnly>
             </motion.div>
           </div>
