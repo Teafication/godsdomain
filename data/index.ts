@@ -1,8 +1,8 @@
 // Navigation sections
 export const sections = [
+  { name: "Join Discord", link: "#join-discord" },
   { name: "About", link: "#about" },
   { name: "Leadership", link: "#leadership" },
-  { name: "Form", link: "#form" },
-  { name: "Hall of Fame", link: "#hall-of-fame" },
+  { name: "Forms", link: "#forms" },
   { name: "FAQ", link: "#faq" },
 ];

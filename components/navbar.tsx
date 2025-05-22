@@ -48,7 +48,9 @@ const DesktopNav = ({
         borderTopRightRadius: "15px",
       }}
     >
-      <Logo />
+      <div className="flex-shrink-0">
+        <Logo />
+      </div>
       <motion.div className="flex items-center justify-center space-x-2 text-sm text-zinc-600 font-medium hover:text-zinc-800">
         {navItems.map(({ name, link }, idx) => (
           <Link
@@ -104,8 +106,11 @@ const MobileNav = ({
         visible && "bg-white/80 dark:bg-neutral-950/80"
       )}
     >
+      {" "}
       <div className="flex justify-between items-center w-full">
-        <Logo />
+        <div className="flex-shrink-0">
+          <Logo />
+        </div>
         <div className="flex items-center gap-4 mr-2">
           <ModeToggle />
           <AnimatePresence mode="popLayout" initial={false}>
