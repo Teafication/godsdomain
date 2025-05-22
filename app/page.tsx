@@ -1,13 +1,12 @@
 "use client";
-
-import Topbar from "@/components/TopBar";
+import NavBar from "@/components/navbar";
+import Hero from "@/components/hero";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white dark:bg-black">
-      <Topbar />
-
-      {/* Page content will go here */}
+      <NavBar />
+      <Hero />
       <div className="container mx-auto">{/* Empty page for now */}</div>
     </div>
   );

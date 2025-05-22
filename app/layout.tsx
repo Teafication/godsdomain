@@ -1,10 +1,11 @@
-"use client";
-
 import { Inter } from "next/font/google";
-import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { ThemeProvider } from "next-themes";
+import type { Metadata } from "next";
+import ThemeProviderWrapper from "./theme-provider";
+
+export const metadata: Metadata = {
+  title: "Gods Domain",
+  description: "Kingdom 3435 Rise of Kingdoms Website",
+};
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,18 +21,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="alternate icon" href="/favicon.ico" />
       </head>
       <body className={`${inter.variable} antialiased bg-background`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-          <Analytics />
-          <SpeedInsights />
-        </ThemeProvider>
+        <ThemeProviderWrapper>{children}</ThemeProviderWrapper>
       </body>
     </html>
   );
