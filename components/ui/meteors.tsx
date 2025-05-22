@@ -1,4 +1,5 @@
 "use client";
+
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import React from "react";
@@ -47,7 +48,7 @@ export const Meteors = ({
             )}
             style={{
               backgroundColor: meteorColor,
-              top: Math.floor(Math.random() * 50) + "%", // Start at random vertical position
+              top: "-5%", // Start above the visible area
               left: position + "%",
               animationDelay: Math.random() * 5 + "s", // Random delay between 0-5s
               animationDuration: Math.floor(Math.random() * (10 - 3) + 3) + "s", // Random duration 3-10s
