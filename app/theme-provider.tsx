@@ -19,7 +19,7 @@ export default function ThemeProviderWrapper({
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="system"
+      defaultTheme="dark"
       enableSystem
       disableTransitionOnChange
     >

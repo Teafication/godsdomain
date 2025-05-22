@@ -4,10 +4,14 @@ import Image from "next/image";
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import { ColourfulText } from "@/components/ui/colorful-text";
 import { ContainerScroll } from "@/components/ui/containerscroll";
+import { Meteors } from "@/components/ui/meteors";
 
 export function Hero() {
   return (
     <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col overflow-hidden">
+      {/* Rainbow Meteors */}
+      <Meteors number={30} />
+
       <ContainerScroll
         titleComponent={
           <div className="pt-20 md:pt-32">
